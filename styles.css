@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Clearface Bold";
+  src: url("fonts/Clearface\ Gothic\ LH\ 75\ Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-fluid {
+  padding: 0 15% 0 15%;
+  height: 90px;
+}
+
+.navbar {
+  width: 75%;
+  height: 100%;
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 20px 10px;
+  background: radial-gradient(circle, #f9ad00, #f77600);
+  border-radius: 0 0 10% 10%;
+}
+
+.navbar-toggler {
+  margin: 0 auto;
+}
+
+#main-nav {
+  position: relative;
+  top: 10px;
+}
+
+#main-nav .nav-link {
+  color: #555;
+  font-family: "Clearface Bold";
+  font-size: 15px;
+}
+
+#right-nav {
+  float: right;
+  position: absolute;
+  left: 70%;
+  top: 2%;
+}
+
+#top-nav {
+  font-family: "Clearface Bold";
+  font-size: 10px;
+}
+
+#top-nav li a {
+  color: #555;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+#register {
+  color: #f9ad00;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.fa-user {
+  color: #f08a00;
+  padding-right: 5px;
+}
+
+#bottom-nav ul {
+  position: relative;
+  left: 5.2rem;
+}
+
+#bottom-nav li a {
+  color: #555;
+  padding: 5px 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1237px) {
+  #main-nav .nav-link {
+    font-size: 12px;
+    padding: 0 4px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 992px) {
+  #register {
+    position: relative;
+    top: 1.25rem;
+  }
+
+  .fa-user {
+    font-size: 2rem;
+  }
+
+  #top-nav {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand {
+    position: relative;
+    left: -35px;
+    top: -28px;
+    transform: scale(0.5, 0.5);
+  }
+
+  .navbar-toggler {
+    position: relative;
+    top: -100px;
+    left: 30px;
+  }
+
+  #main-nav {
+    top: -80px;
+  }
+}
