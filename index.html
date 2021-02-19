@@ -11,15 +11,23 @@
     />
     <link
       rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     />
+    
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    /> 
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="index.js"></script>
   </head>
   <body>
-    <section id="title">
+    <section id="header">
       <div id="nav-wrapper" class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">
@@ -30,10 +38,13 @@
             />
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler mx-auto"
             type="button"
             data-toggle="collapse"
             data-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -99,5 +110,251 @@
         </div>
       </div>
     </section>
+    <section id="footer">
+      <div id="own-brands">
+        <h1>Kennen Sie unsere Eigenmarken?</h1>
+        <button class="button btn-orange">entdecken</button>
+      </div>
+      <div id="social-media">
+        <h2>Bleiben Sie immer informiert</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <i class="icon fa fa-facebook fa-2x"></i>
+            <p class="icon-name">Facebook</p>
+          </div>
+          <div class="col-sm-3">
+            <i class="icon fa fa-instagram fa-2x"></i>
+            <p class="icon-name">Instagram</p>
+          </div>
+          <div class="col-sm-3">
+            <i class="icon fa fa-youtube fa-2x"></i>
+            <p class="icon-name">Youtube</p>
+          </div>
+          <div class="col-sm-3">
+            <i class="icon fa fa-envelope fa-2x"></i>
+            <p class="icon-name">Newsletter</p>
+          </div>
+        </div>
+      </div>
+      <div id="flyout-menu" class="d-inline-flex flex-column">
+        <a href=""><i class="fa fa-fax"></i></a>
+        <a href=""><i class="fa fa-cutlery"></i></a>
+        <a href=""><i class="fa fa-map-marker"></i></a>
+        <a href=""><i class="fa fa-pencil"></i></a>
+        <a href=""><i class="fa fa-phone"></i></a>
+      </div>
+      <footer id="footer-main">
+        <div id="navigate-up">
+          <a href="#">
+            <i class="fa fa-chevron-up"></i>
+            <p>Nach oben</p>
+          </a>
+        </div>
+        <div class="container-fluid">
+          <div id="footer-columns">
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#"
+                  aria-expanded="false"
+                  aria-controls=""
+                >
+                  <span>Märkte</span>
+                </a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#bewusst-leben"
+                  aria-expanded="false"
+                  aria-controls="bewusst-leben"
+                >
+                  <span>Bewusst Leben</span>
+                </a>
+              </div>
+              <nav>
+                <ul id="bewusst-leben" class="navigation-list collapse">
+                  <li>
+                    <a class="navigation-link" href="#">Bewusst Genießen</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Bewusst Pflegen</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Bewusst Wohlfühlen</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Bewusst Handeln</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Rezepte</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#sortiment"
+                  aria-expanded="false"
+                  aria-controls="sortiment"
+                >
+                  <span>Sortiment</span>
+                </a>
+              </div>
+              <nav>
+                <ul id="sortiment" class="navigation-list collapse">
+                  <li>
+                    <a class="navigation-link" href="#">Unsere Marken</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Exklusivmarken</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">
+                      Marken unserer Partner
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#services"
+                  aria-expanded="false"
+                  aria-controls="services"
+                >
+                  <span>Services</span>
+                </a>
+              </div>
+              <nav>
+                <ul id="services" class="navigation-list collapse">
+                  <li>
+                    <a class="navigation-link" href="#">Newsletter</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Services vor Ort</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Garantien</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Buchshop</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#unternehmen"
+                  aria-expanded="false"
+                  aria-controls="unternehmen"
+                >
+                  <span>Unternehmen</span>
+                </a>
+              </div>
+              <nav>
+                <ul id="unternehmen" class="navigation-list collapse">
+                  <li>
+                    <a class="navigation-link" href="#">Profil</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Historie</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Werte</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Arbeiten bei Globus</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Presse</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">
+                      Standortanforderungen
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Neue</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Ansiedlungsprojekte</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#mein-globus"
+                  aria-expanded="false"
+                  aria-controls="mein-globus"
+                >
+                  <span>Mein Globus</span>
+                </a>
+              </div>
+              <nav>
+                <ul id="mein-globus" class="navigation-list collapse">
+                  <li>
+                    <a class="navigation-link" href="#">Weinliebhaber Club</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Weltentdecker Club</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Tankeschön</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-column">
+              <div class="column-headline">
+                <a
+                  data-toggle="collapse"
+                  href="#globus-gruppe"
+                  aria-expanded="false"
+                  aria-controls="globus-gruppe"
+                >
+                  <span>Globus-Gruppe</span>
+                </a>
+              </div>
+              <nav>
+                <ul id="globus-gruppe" class="navigation-list collapse">
+                  <li>
+                    <a class="navigation-link" href="#">Globus Baumarkt</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Alphatecc</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Globus Russland</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Globus Tschechein</a>
+                  </li>
+                  <li>
+                    <a class="navigation-link" href="#">Mein fridel</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div id="footer-bottom">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+          </div>
+        </div>
+      </footer>     
+    </section>  
   </body>
 </html>
