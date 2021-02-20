@@ -13,17 +13,25 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     />
-    
+
     <link
       rel="stylesheet"
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    /> 
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="index.js"></script>
   </head>
   <body>
@@ -106,6 +114,116 @@
                 <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="article-detail">
+      <div id="related-items">
+        <h3>Sie mögen bestimmt auch</h3>
+        <div class="splide">
+          <div class="splide__slider">
+            <div class="splide__arrows">
+              <button
+                class="splide__arrow card-arrow splide__arrow--prev"
+                type="button"
+                aria-controls="splide01-track"
+                disabled=""
+                aria-label="Previous slide"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="splide__arrow card-arrow splide__arrow--next"
+                type="button"
+                aria-controls="splide01-track"
+                aria-label="Next slide"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="card">
+                    <img
+                      src="images/dulcita.jpg"
+                      class="card-img-top"
+                      alt="dulcita"
+                    />
+                    <div class="card-body">
+                      <span class="card-title">Dulcita</span>
+                      <p class="card-text">Globus</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card">
+                    <img
+                      src="images/cherry-tomaten.jpg"
+                      class="card-img-top"
+                      alt="cherry tomaten"
+                    />
+                    <div class="card-body">
+                      <span class="card-title">Cherry Tomaten</span>
+                      <p class="card-text">Globus</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card">
+                    <img
+                      src="images/champignon.jpg"
+                      class="card-img-top"
+                      alt="champignon"
+                    />
+                    <div class="card-body">
+                      <span class="card-title">Champignon</span>
+                      <p class="card-text">Globus</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card">
+                    <img
+                      src="images/roma-rispentomaten.jpg"
+                      class="card-img-top"
+                      alt="roma rispentomaten"
+                    />
+                    <div class="card-body">
+                      <span class="card-title">Roma Rispentomaten</span>
+                      <p class="card-text">Globus</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card">
+                    <img
+                      src="images/cocktail-tomaten.jpg"
+                      class="card-img-top"
+                      alt="cocktail-tomaten"
+                    />
+                    <div class="card-body">
+                      <span class="card-title">Cocktail Tomaten</span>
+                      <p class="card-text">Globus</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card">
+                    <img
+                      src="images/champignon-weiss.jpg"
+                      class="card-img-top"
+                      alt="champignon-weiss"
+                    />
+                    <div class="card-body">
+                      <span class="card-title">Champignons Weiß</span>
+                      <p class="card-text">Globus</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -354,7 +472,7 @@
             <a href="#">Datenschutz</a>
           </div>
         </div>
-      </footer>     
-    </section>  
+      </footer>
+    </section>
   </body>
 </html>

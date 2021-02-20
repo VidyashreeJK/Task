@@ -81,7 +81,55 @@ body {
   padding: 5px 10px;
 }
 
-#footer, #footer a{
+#related-items {
+  padding: 3% 15%;
+}
+
+#related-items > h3 {
+  font-family: Clearface Medium;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  font-family: "Clearface Medium";
+  width: 10rem;
+  height: 10rem;
+  border-color: whitesmoke;
+  border-radius: 0;
+  margin: auto;
+}
+
+.card-body {
+  color: grey;
+  font-size: 10px;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.card-title {
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.card-arrow {
+  color: white;
+  border-radius: 10%;
+  opacity: 1;
+  background: whitesmoke;
+}
+
+.splide__arrow--prev {
+  left: -1rem;
+}
+
+.splide__arrow--next {
+  right: -1rem;
+}
+
+#footer,
+#footer a {
   color: white;
   text-decoration: none;
 }
@@ -89,7 +137,7 @@ body {
 #own-brands {
   background-image: url("images/own-brands-section.jpg");
   background-repeat: no-repeat;
-  text-align: center; 
+  text-align: center;
   padding: 8% 20% 6%;
 }
 
@@ -106,7 +154,7 @@ body {
   padding: 0.5rem 2rem;
 }
 
-.button:focus{
+.button:focus {
   outline: none;
 }
 
@@ -128,7 +176,8 @@ body {
   margin: 10% 0 5%;
 }
 
-.icon-name, .navigation-link {
+.icon-name,
+.navigation-link {
   font-size: 12px;
   font-family: Clearface Medium;
 }
@@ -156,7 +205,7 @@ footer .container-fluid {
 
 #navigate-up {
   font-family: "Caveat", cursive;
-  text-align: center; 
+  text-align: center;
   padding: 1rem 0 0;
 }
 
@@ -168,7 +217,7 @@ footer .container-fluid {
 
 #footer-bottom {
   font-size: 8px;
-  text-align: center; 
+  text-align: center;
   padding: 1rem 0;
 }
 
@@ -181,6 +230,11 @@ footer .container-fluid {
   #main-nav .nav-link {
     font-size: 12px;
     padding: 0 3.5px;
+  }
+
+  .card {
+    width: 8rem;
+    height: 9rem;
   }
 }
 
@@ -200,7 +254,7 @@ footer .container-fluid {
 }
 
 @media screen and (max-width: 991px) {
-  .icon{
+  .icon {
     font-size: 1rem;
   }
 
@@ -224,7 +278,7 @@ footer .container-fluid {
 
   .column-headline a.expanded::after {
     content: "\f077";
-  } 
+  }
 }
 
 @media screen and (max-width: 382px) {
@@ -266,8 +320,3 @@ footer .container-fluid {
     left: 90%;
   }
 }
-
-
-
-
-
