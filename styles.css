@@ -81,11 +81,91 @@ body {
   padding: 5px 10px;
 }
 
+#article-price {
+  background-color: black;
+}
+
+#article-info-tabs {
+  padding: 3% 15% 0;
+  font-family: "Caveat", cursive;
+  font-size: 1.75rem;
+}
+
+.nav-tabs .nav-link.active {
+  color: #555;
+  background-color: #efefef;
+  border: none;
+}
+
+.nav-tabs,
+.nav-tabs a,
+.nav-tabs a:hover {
+  color: white;
+  border: none;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -2px;
+}
+
+.tab-content > .tab-pane {
+  display: block;
+  visibility: hidden;
+}
+
+.tab-content > .active {
+  visibility: visible;
+}
+
+#article-info {
+  font-family: "Clearface Medium";
+  color: #555;
+  background-color: #efefef;
+  padding: 0 15% 3%;
+}
+
+#article-info h4 {
+  padding: 2.5rem 0;
+}
+
+.table {
+  font-size: 10px;
+  color: #555;
+  width: 35%;
+}
+
+.table td {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #dee2e6;
+  border-top: none;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+.btn-dark,
+.btn-dark:hover {
+  background-color: #f77600;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+#more-info {
+  margin: 4.5% 0 0 14%;
+}
+
+#more-info > p {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
 #related-items {
   padding: 3% 15%;
 }
 
-#related-items > h3 {
+#related-items > h4 {
   font-family: Clearface Medium;
   color: #555;
   text-align: center;
@@ -151,15 +231,15 @@ body {
   font-size: 15px;
   border-radius: 0.25rem;
   border: none;
-  padding: 0.5rem 2rem;
 }
 
-.button:focus {
+.button:hover {
   outline: none;
 }
 
 .btn-orange {
   background-color: #f08a00;
+  padding: 0.5rem 2rem;
 }
 
 #social-media {
@@ -297,6 +377,12 @@ footer .container-fluid {
 
   #main-nav {
     top: -80px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #more-info > p {
+    font-size: 1.5rem;
   }
 }
 
