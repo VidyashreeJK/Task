@@ -1,590 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Globus</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <section id="header">
-      <div id="nav-wrapper" class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
-            <img
-              src="https://www.globus.de/media/redaktionell/maerkte/gera-trebnitz/globus-logo.png"
-              title="Globe logo"
-              alt="Globe logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler mx-auto"
-            type="button"
-            data-toggle="collapse"
-            data-target="#main-nav"
-            aria-controls="main-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Märkte</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bewusst Leben</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sortiment</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Unternehmen</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #093">Mein Globus</a>
-              </li>
-              <li class="nav-item d-inline d-lg-none">
-                <a class="nav-link" href="#">Kontakt</a>
-              </li>
-              <li class="nav-item d-inline d-lg-none">
-                <a class="nav-link" href="#">Newsletter</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Globus</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="index.js"></script>
+</head>
 
-        <div id="right-nav">
-          <div id="top-nav">
-            <a id="register" href="#">
-              <i class="fa fa-user fa-2x"></i>
-              Anmelden
-            </a>
-            <ul class="navbar-nav d-none d-lg-inline-flex flex-row">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Newsletter</a>
-              </li>
-            </ul>
-          </div>
-          <div id="bottom-nav">
-            <ul class="navbar-nav d-none d-lg-inline-flex flex-row">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-youtube"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <section id="header">
+    <div id="nav-wrapper" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.globus.de/media/redaktionell/maerkte/gera-trebnitz/globus-logo.png" title="Globe logo"
+            alt="Globe logo" />
+        </a>
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#main-nav"
+          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Märkte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bewusst Leben</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sortiment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Unternehmen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #093">Mein Globus</a>
+            </li>
+            <li class="nav-item d-inline d-lg-none">
+              <a class="nav-link" href="#">Kontakt</a>
+            </li>
+            <li class="nav-item d-inline d-lg-none">
+              <a class="nav-link" href="#">Newsletter</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-    <section id="article-detail">
-      <div id="article-price">
-        <div id="article-info-tabs">
-          <ul class="nav nav-tabs nav-justified" id="info-tabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link active"
-                id="nährwertangabe-tab"
-                data-toggle="tab"
-                data-target="#nährwertangabe"
-                type="button"
-                role="tab"
-                aria-controls="nährwertangabe"
-                aria-selected="true"
-              >
-                Nährwertangabe
-              </a>
+      </nav>
+      <div id="right-nav">
+        <div id="top-nav">
+          <a id="register" href="#">
+            <i class="fa fa-user fa-2x"></i>
+            Anmelden
+          </a>
+          <ul class="navbar-nav d-none d-lg-inline-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontakt</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link"
-                id="zutaten-tab"
-                data-toggle="tab"
-                data-target="#zutaten"
-                type="button"
-                role="tab"
-                aria-controls="zutaten"
-                aria-selected="false"
-              >
-                Zutaten
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsletter</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link"
-                id="rezepte-tab"
-                data-toggle="tab"
-                data-target="#rezepte"
-                type="button"
-                role="tab"
-                aria-controls="rezepte"
-                aria-selected="false"
-              >
-                Rezepte
-              </a>
+          </ul>
+        </div>
+        <div id="bottom-nav">
+          <ul class="navbar-nav d-none d-lg-inline-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
             </li>
           </ul>
         </div>
       </div>
-      <div id="article-info">
-        <div class="tab-content" id="infoTabContent">
-          <div
-            class="tab-pane active"
-            id="nährwertangabe"
-            role="tabpanel"
-            aria-labelledby="nährwertangabe-tab"
-          >
-            <h4>Angaben beziehen sich auf:100 g Cherry Tomaten</h4>
-            <div class="d-flex flex-row">
-              <table class="table">
-                <tr>
-                  <td>Kilokalorien(kcal)</td>
-                  <td>17 kcal</td>
-                </tr>
-                <tr>
-                  <td>KiloJoule(kJ)</td>
-                  <td>71 KJ</td>
-                </tr>
-                <tr>
-                  <td>Wasser</td>
-                  <td>94 g</td>
-                </tr>
-                <tr>
-                  <td>Eiweiß,Proteine</td>
-                  <td>1 g</td>
-                </tr>
-                <tr>
-                  <td>Fett</td>
-                  <td>0 g</td>
-                </tr>
-                <tr>
-                  <td>Kohlenhydrate</td>
-                  <td>3 g</td>
-                </tr>
-                <tr>
-                  <td>Ballaststoffe</td>
-                  <td>1 g</td>
-                </tr>
-              </table>
-              <div id="more-info">
-                <p>BEWUSST LEBEN</p>
-                <p>MIT GLOBUS.</p>
-                <button class="button btn-dark">Mehr erfahren</button>
+    </div>
+  </section>
+  <section id="article-detail">
+    <div id="article-price">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Startseite</a></li>
+          <li class="breadcrumb-item"><a href="#">Märkte</a></li>
+          <li class="breadcrumb-item"><a href="#">Dutenhofen</a></li>
+          <li class="breadcrumb-item"><a href="#">Obst & Gemüse</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Cherry Tomaten
+          </li>
+        </ol>
+      </nav>
+      <div id="article-selection">
+        <div class="article-selection-top-wrapper d-flex flex-row">
+          <div class="article-selection-top d-flex flex-row">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Alle Produkte
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+            </div>
+          </div>
+          <div class="article-selection-top d-flex flex-row">
+            <i class="fas fa-shopping-basket"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Einkaufsliste
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
+            </div>
+          </div>
+          <div class="article-selection-top ml-lg-auto">
+            <img src="images/shopping-bag.png" />
+            <div id="items-bookmarked">
+              <p>24 Artikel</p>
+              <p>&#10004 gemerkt</p>
+            </div>
+          </div>
+        </div>
+        <div id="article-offers" class="row m-0 px-4">
+          <div id="carouselIndicators" class="carousel slide col-lg-5 py-5" data-ride="false">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 h-100" src="images/cherry-tomaten.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/cocktail-tomaten.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/dulcita.jpg" alt="Third slide">
               </div>
             </div>
           </div>
-          <div
-            class="tab-pane"
-            id="zutaten"
-            role="tabpanel"
-            aria-labelledby="zutaten-tab"
-          ></div>
-          <div
-            class="tab-pane"
-            id="rezepte"
-            role="tabpanel"
-            aria-labelledby="rezepte-tab"
-          ></div>
+          <div class="col-lg-7 py-5">
+            <div class="d-sm-flex justify-content-between mb-3">
+              <div>
+                <h1 class="mb-0">Cherry Tomaten</h1>
+                <span>Globus</span>
+              </div>
+              <div class="mt-2 text-right">
+                <span id="angebot" class="badges rounded mb-2">ANGEBOT</span>
+                <span id="neu" class="badges rounded ml-1">NEU</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+              <div id="article-value">
+                <span id="discounted-price">2,10 €</span>
+                <span id="original-price">2,60 €</span>
+                <span class="d-block mt-n3">inkl.MwSt.zzgl. Versandkosten</span>
+                <span><span id="weight">250</span> g (1 kg = 8,40 €)</span>
+              </div>
+              <div class="text-right mt-5">
+                <h6>Soll es eine andere Größe sein?</h6>
+                <button class="btn-article-weight">500 g</button>
+                <button class="btn-article-weight">300 g</button>
+                <button class="btn-article-weight">250 g</button>
+              </div>
+            </div>
+            <div id="article-add-wrapper" class="float-right text-right">
+              <div class="mb-2">
+                <a href="">
+                  vergleichen
+                  <i class="fa fa-exchange"></i>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <span class="icon-plus"></span>
+                  Auf die Einkaufsliste
+                  <i class="fas fa-shopping-basket"></i>
+                </a>
+              </div>
+              <div id="item-add-wrapper">
+                <span class="d-none d-md-inline-flex">ich brauche mehr</span>
+                <img id="arrow-down" class="d-none d-md-inline-flex" src="images/decrease.png">
+                <span id="arrow-description" class="d-none d-md-inline-flex">weniger</span>
+                <img id="arrow-right" class="d-none d-md-inline-flex" src="images/right.png">
+                <div id="add-item" class="mt-2"><a class="icon-minus rounded-left"></a>
+                  <span class="px-3 py-2">3</span>
+                  <a class="icon-plus rounded-right"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="article-description" class="text-center">
+          <h4>Immer frisch & lecker.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Felis eget nunc lobortis mattis aliquam. Facilisis leo vel fringilla est ullamcorper
+            eget nulla. Risus commodo viverra maecenas accumsan lacus vel. Vestibulum morbi blandit cursus risus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Felis eget nunc lobortis mattis aliquam. Facilisis leo vel fringilla est ullamcorper
+            eget nulla. Risus commodo viverra maecenas accumsan lacus vel. Vestibulum morbi blandit cursus risus.
+          </p>
+          <div id="article-type" class="row my-5 px-5">
+            <div class="col-md-3 col-sm-6">
+              <i class="fas fa-wheat fa-stack-2x pt-3"></i>
+              <i class="fas fa-ban pb-2"></i>
+              <p>GLUTENFREI</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <i class="fas fa-leaf fa-2x  pt-3 pb-4"></i>
+              <p>BIO</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <i class="fas fa-flask fa-stack-2x pt-3"></i>
+              <i class="fas fa-ban pb-2"></i>
+              <p>LAKTOSEFREI</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <i class="fas fa-seedling fa-2x pt-3 pb-4"></i>
+              <p>VEGAN</p>
+            </div>
+          </div>
+          <i class="fa fa-chevron-down fa-2x"></i>
         </div>
       </div>
-      <div id="related-items">
-        <h4>Sie mögen bestimmt auch</h4>
-        <div class="splide">
-          <div class="splide__slider">
-            <div class="splide__arrows">
-              <button
-                class="splide__arrow card-arrow splide__arrow--prev"
-                type="button"
-                aria-controls="splide01-track"
-                disabled=""
-                aria-label="Previous slide"
-              >
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button
-                class="splide__arrow card-arrow splide__arrow--next"
-                type="button"
-                aria-controls="splide01-track"
-                aria-label="Next slide"
-              >
-                <i class="fas fa-chevron-right"></i>
-              </button>
+    </div>
+    <div id="article-info-tabs">
+      <ul class="nav nav-tabs nav-justified" id="info-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="nährwertangabe-tab" data-toggle="tab" data-target="#nährwertangabe"
+            type="button" role="tab" aria-controls="nährwertangabe" aria-selected="true">
+            Nährwertangabe
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="zutaten-tab" data-toggle="tab" data-target="#zutaten" type="button" role="tab"
+            aria-controls="zutaten" aria-selected="false">
+            Zutaten
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="rezepte-tab" data-toggle="tab" data-target="#rezepte" type="button" role="tab"
+            aria-controls="rezepte" aria-selected="false">
+            Rezepte
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="article-info">
+      <div class="tab-content" id="infoTabContent">
+        <div class="tab-pane active" id="nährwertangabe" role="tabpanel" aria-labelledby="nährwertangabe-tab">
+          <h4>Angaben beziehen sich auf:100 g Cherry Tomaten</h4>
+          <div class="d-flex flex-row">
+            <table class="table">
+              <tr>
+                <td>Kilokalorien(kcal)</td>
+                <td>17 kcal</td>
+              </tr>
+              <tr>
+                <td>KiloJoule(kJ)</td>
+                <td>71 KJ</td>
+              </tr>
+              <tr>
+                <td>Wasser</td>
+                <td>94 g</td>
+              </tr>
+              <tr>
+                <td>Eiweiß,Proteine</td>
+                <td>1 g</td>
+              </tr>
+              <tr>
+                <td>Fett</td>
+                <td>0 g</td>
+              </tr>
+              <tr>
+                <td>Kohlenhydrate</td>
+                <td>3 g</td>
+              </tr>
+              <tr>
+                <td>Ballaststoffe</td>
+                <td>1 g</td>
+              </tr>
+            </table>
+            <div id="more-info">
+              <div>
+                <span>BEWUSST LEBEN</span>
+                <br>
+                <span>MIT GLOBUS.</span>
+              </div>
+              <button class="button btn-dark">Mehr erfahren</button>
             </div>
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="card">
-                    <img
-                      src="images/dulcita.jpg"
-                      class="card-img-top"
-                      alt="dulcita"
-                    />
-                    <div class="card-body">
-                      <span class="card-title">Dulcita</span>
-                      <p class="card-text">Globus</p>
-                    </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="zutaten" role="tabpanel" aria-labelledby="zutaten-tab"></div>
+        <div class="tab-pane" id="rezepte" role="tabpanel" aria-labelledby="rezepte-tab"></div>
+      </div>
+    </div>
+    <div id="related-items">
+      <h4>Sie mögen bestimmt auch</h4>
+      <div class="splide">
+        <div class="splide__slider">
+          <div class="splide__arrows">
+            <button class="splide__arrow card-arrow splide__arrow--prev" type="button" aria-controls="splide01-track"
+              disabled="" aria-label="Previous slide">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="splide__arrow card-arrow splide__arrow--next" type="button" aria-controls="splide01-track"
+              aria-label="Next slide">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card">
+                  <img src="images/dulcita.jpg" class="card-img-top" alt="dulcita" />
+                  <div class="card-body">
+                    <span class="card-title">Dulcita</span>
+                    <p class="card-text">Globus</p>
                   </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card">
+                  <img src="images/cherry-tomaten.jpg" class="card-img-top" alt="cherry tomaten" />
+                  <div class="card-body">
+                    <span class="card-title">Cherry Tomaten</span>
+                    <p class="card-text">Globus</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card">
+                  <img src="images/champignon.jpg" class="card-img-top" alt="champignon" />
+                  <div class="card-body">
+                    <span class="card-title">Champignon</span>
+                    <p class="card-text">Globus</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card">
+                  <img src="images/roma-rispentomaten.jpg" class="card-img-top" alt="roma rispentomaten" />
+                  <div class="card-body">
+                    <span class="card-title">Roma Rispentomaten</span>
+                    <p class="card-text">Globus</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card">
+                  <img src="images/cocktail-tomaten.jpg" class="card-img-top" alt="cocktail-tomaten" />
+                  <div class="card-body">
+                    <span class="card-title">Cocktail Tomaten</span>
+                    <p class="card-text">Globus</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card">
+                  <img src="images/champignon-weiss.jpg" class="card-img-top" alt="champignon-weiss" />
+                  <div class="card-body">
+                    <span class="card-title">Champignons Weiß</span>
+                    <p class="card-text">Globus</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div id="own-brands">
+      <h1>Kennen Sie unsere Eigenmarken?</h1>
+      <button class="button btn-orange">entdecken</button>
+    </div>
+    <div id="social-media">
+      <h2>Bleiben Sie immer informiert</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <i class="icon fa fa-facebook fa-2x"></i>
+          <p class="icon-name">Facebook</p>
+        </div>
+        <div class="col-sm-3">
+          <i class="icon fa fa-instagram fa-2x"></i>
+          <p class="icon-name">Instagram</p>
+        </div>
+        <div class="col-sm-3">
+          <i class="icon fa fa-youtube fa-2x"></i>
+          <p class="icon-name">Youtube</p>
+        </div>
+        <div class="col-sm-3">
+          <i class="icon fa fa-envelope fa-2x"></i>
+          <p class="icon-name">Newsletter</p>
+        </div>
+      </div>
+    </div>
+    <div id="flyout-menu" class="d-inline-flex flex-column">
+      <a href=""><i class="fa fa-fax"></i></a>
+      <a href=""><i class="fa fa-cutlery"></i></a>
+      <a href=""><i class="fa fa-map-marker"></i></a>
+      <a href=""><i class="fa fa-pencil"></i></a>
+      <a href=""><i class="fa fa-phone"></i></a>
+    </div>
+    <footer id="footer-main">
+      <div id="navigate-up">
+        <a href="#">
+          <i class="fa fa-chevron-up"></i>
+          <p>Nach oben</p>
+        </a>
+      </div>
+      <div class="container-fluid">
+        <div id="footer-columns">
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#" aria-expanded="false" aria-controls="">
+                <span>Märkte</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#bewusst-leben" aria-expanded="false" aria-controls="bewusst-leben">
+                <span>Bewusst Leben</span>
+              </a>
+            </div>
+            <nav>
+              <ul id="bewusst-leben" class="navigation-list collapse">
+                <li>
+                  <a class="navigation-link" href="#">Bewusst Genießen</a>
                 </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img
-                      src="images/cherry-tomaten.jpg"
-                      class="card-img-top"
-                      alt="cherry tomaten"
-                    />
-                    <div class="card-body">
-                      <span class="card-title">Cherry Tomaten</span>
-                      <p class="card-text">Globus</p>
-                    </div>
-                  </div>
+                <li>
+                  <a class="navigation-link" href="#">Bewusst Pflegen</a>
                 </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img
-                      src="images/champignon.jpg"
-                      class="card-img-top"
-                      alt="champignon"
-                    />
-                    <div class="card-body">
-                      <span class="card-title">Champignon</span>
-                      <p class="card-text">Globus</p>
-                    </div>
-                  </div>
+                <li>
+                  <a class="navigation-link" href="#">Bewusst Wohlfühlen</a>
                 </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img
-                      src="images/roma-rispentomaten.jpg"
-                      class="card-img-top"
-                      alt="roma rispentomaten"
-                    />
-                    <div class="card-body">
-                      <span class="card-title">Roma Rispentomaten</span>
-                      <p class="card-text">Globus</p>
-                    </div>
-                  </div>
+                <li>
+                  <a class="navigation-link" href="#">Bewusst Handeln</a>
                 </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img
-                      src="images/cocktail-tomaten.jpg"
-                      class="card-img-top"
-                      alt="cocktail-tomaten"
-                    />
-                    <div class="card-body">
-                      <span class="card-title">Cocktail Tomaten</span>
-                      <p class="card-text">Globus</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="card">
-                    <img
-                      src="images/champignon-weiss.jpg"
-                      class="card-img-top"
-                      alt="champignon-weiss"
-                    />
-                    <div class="card-body">
-                      <span class="card-title">Champignons Weiß</span>
-                      <p class="card-text">Globus</p>
-                    </div>
-                  </div>
+                <li>
+                  <a class="navigation-link" href="#">Rezepte</a>
                 </li>
               </ul>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#sortiment" aria-expanded="false" aria-controls="sortiment">
+                <span>Sortiment</span>
+              </a>
             </div>
+            <nav>
+              <ul id="sortiment" class="navigation-list collapse">
+                <li>
+                  <a class="navigation-link" href="#">Unsere Marken</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Exklusivmarken</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">
+                    Marken unserer Partner
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#services" aria-expanded="false" aria-controls="services">
+                <span>Services</span>
+              </a>
+            </div>
+            <nav>
+              <ul id="services" class="navigation-list collapse">
+                <li>
+                  <a class="navigation-link" href="#">Newsletter</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Services vor Ort</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Garantien</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Buchshop</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#unternehmen" aria-expanded="false" aria-controls="unternehmen">
+                <span>Unternehmen</span>
+              </a>
+            </div>
+            <nav>
+              <ul id="unternehmen" class="navigation-list collapse">
+                <li>
+                  <a class="navigation-link" href="#">Profil</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Historie</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Werte</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Arbeiten bei Globus</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Presse</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">
+                    Standortanforderungen
+                  </a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Neue</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Ansiedlungsprojekte</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#mein-globus" aria-expanded="false" aria-controls="mein-globus">
+                <span>Mein Globus</span>
+              </a>
+            </div>
+            <nav>
+              <ul id="mein-globus" class="navigation-list collapse">
+                <li>
+                  <a class="navigation-link" href="#">Weinliebhaber Club</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Weltentdecker Club</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Tankeschön</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <div class="column-headline">
+              <a data-toggle="collapse" href="#globus-gruppe" aria-expanded="false" aria-controls="globus-gruppe">
+                <span>Globus-Gruppe</span>
+              </a>
+            </div>
+            <nav>
+              <ul id="globus-gruppe" class="navigation-list collapse">
+                <li>
+                  <a class="navigation-link" href="#">Globus Baumarkt</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Alphatecc</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Globus Russland</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Globus Tschechein</a>
+                </li>
+                <li>
+                  <a class="navigation-link" href="#">Mein fridel</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="footer">
-      <div id="own-brands">
-        <h1>Kennen Sie unsere Eigenmarken?</h1>
-        <button class="button btn-orange">entdecken</button>
-      </div>
-      <div id="social-media">
-        <h2>Bleiben Sie immer informiert</h2>
-        <div class="row">
-          <div class="col-sm-3">
-            <i class="icon fa fa-facebook fa-2x"></i>
-            <p class="icon-name">Facebook</p>
-          </div>
-          <div class="col-sm-3">
-            <i class="icon fa fa-instagram fa-2x"></i>
-            <p class="icon-name">Instagram</p>
-          </div>
-          <div class="col-sm-3">
-            <i class="icon fa fa-youtube fa-2x"></i>
-            <p class="icon-name">Youtube</p>
-          </div>
-          <div class="col-sm-3">
-            <i class="icon fa fa-envelope fa-2x"></i>
-            <p class="icon-name">Newsletter</p>
-          </div>
+        <div id="footer-bottom">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
         </div>
       </div>
-      <div id="flyout-menu" class="d-inline-flex flex-column">
-        <a href=""><i class="fa fa-fax"></i></a>
-        <a href=""><i class="fa fa-cutlery"></i></a>
-        <a href=""><i class="fa fa-map-marker"></i></a>
-        <a href=""><i class="fa fa-pencil"></i></a>
-        <a href=""><i class="fa fa-phone"></i></a>
-      </div>
-      <footer id="footer-main">
-        <div id="navigate-up">
-          <a href="#">
-            <i class="fa fa-chevron-up"></i>
-            <p>Nach oben</p>
-          </a>
-        </div>
-        <div class="container-fluid">
-          <div id="footer-columns">
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#"
-                  aria-expanded="false"
-                  aria-controls=""
-                >
-                  <span>Märkte</span>
-                </a>
-              </div>
-            </div>
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#bewusst-leben"
-                  aria-expanded="false"
-                  aria-controls="bewusst-leben"
-                >
-                  <span>Bewusst Leben</span>
-                </a>
-              </div>
-              <nav>
-                <ul id="bewusst-leben" class="navigation-list collapse">
-                  <li>
-                    <a class="navigation-link" href="#">Bewusst Genießen</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Bewusst Pflegen</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Bewusst Wohlfühlen</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Bewusst Handeln</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Rezepte</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#sortiment"
-                  aria-expanded="false"
-                  aria-controls="sortiment"
-                >
-                  <span>Sortiment</span>
-                </a>
-              </div>
-              <nav>
-                <ul id="sortiment" class="navigation-list collapse">
-                  <li>
-                    <a class="navigation-link" href="#">Unsere Marken</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Exklusivmarken</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">
-                      Marken unserer Partner
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#services"
-                  aria-expanded="false"
-                  aria-controls="services"
-                >
-                  <span>Services</span>
-                </a>
-              </div>
-              <nav>
-                <ul id="services" class="navigation-list collapse">
-                  <li>
-                    <a class="navigation-link" href="#">Newsletter</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Services vor Ort</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Garantien</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Buchshop</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#unternehmen"
-                  aria-expanded="false"
-                  aria-controls="unternehmen"
-                >
-                  <span>Unternehmen</span>
-                </a>
-              </div>
-              <nav>
-                <ul id="unternehmen" class="navigation-list collapse">
-                  <li>
-                    <a class="navigation-link" href="#">Profil</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Historie</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Werte</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Arbeiten bei Globus</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Presse</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">
-                      Standortanforderungen
-                    </a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Neue</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Ansiedlungsprojekte</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#mein-globus"
-                  aria-expanded="false"
-                  aria-controls="mein-globus"
-                >
-                  <span>Mein Globus</span>
-                </a>
-              </div>
-              <nav>
-                <ul id="mein-globus" class="navigation-list collapse">
-                  <li>
-                    <a class="navigation-link" href="#">Weinliebhaber Club</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Weltentdecker Club</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Tankeschön</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-column">
-              <div class="column-headline">
-                <a
-                  data-toggle="collapse"
-                  href="#globus-gruppe"
-                  aria-expanded="false"
-                  aria-controls="globus-gruppe"
-                >
-                  <span>Globus-Gruppe</span>
-                </a>
-              </div>
-              <nav>
-                <ul id="globus-gruppe" class="navigation-list collapse">
-                  <li>
-                    <a class="navigation-link" href="#">Globus Baumarkt</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Alphatecc</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Globus Russland</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Globus Tschechein</a>
-                  </li>
-                  <li>
-                    <a class="navigation-link" href="#">Mein fridel</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div id="footer-bottom">
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutz</a>
-          </div>
-        </div>
-      </footer>
-    </section>
-  </body>
+    </footer>
+  </section>
+</body>
+
 </html>
