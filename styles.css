@@ -106,6 +106,7 @@ body {
 
 #article-selection {
   padding: 0 15%;
+  position: relative;
 }
 
 .article-selection-top,
@@ -136,6 +137,50 @@ body {
 
 #items-bookmarked p:last-child {
   color: green;
+}
+
+#mega-menu {
+  display: none;
+  position: absolute;
+  left: 17.5%;
+  margin-right: 17%;
+  z-index: 100;
+}
+
+#mega-menu ul {
+  background-color: white;
+  padding: 2rem 1.5rem 1rem;
+  list-style: none;
+}
+
+#mega-menu li {
+  margin-bottom: 0.5rem;
+}
+
+#mega-menu li a {
+  font-family: "Clearface Medium";
+  color: #555;
+  text-decoration: none;
+}
+
+#mega-menu li::after {
+  color: #555;
+  font-family: "FONTAWESOME";
+  content: "\f054";
+  float: right;
+  margin-left: 1.5rem;
+}
+
+#mega-menu i {
+  margin-right: 0.5rem;
+}
+
+#mega-menu-text {
+  color: white;
+  background-color: #f77600;
+  padding: 4rem;
+  margin-bottom: 1rem;
+  font-family: "Clearface Medium";
 }
 
 #article-offers,
@@ -506,13 +551,13 @@ footer .container-fluid {
     padding: 0 3.5px;
   }
 
+  #article-price nav {
+    padding: 0 0 4% 26%;
+  }
+
   .card {
     width: 8rem;
     height: 9rem;
-  }
-
-  #article-price nav {
-    padding: 0 0 4% 26%;
   }
 }
 
@@ -532,6 +577,16 @@ footer .container-fluid {
 }
 
 @media screen and (max-width: 991px) {
+  #article-price nav {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2% 0 4%;
+  }
+
+  #mega-menu ul {
+    margin-bottom: 0;
+  }
+
   .icon {
     font-size: 1rem;
   }
@@ -556,12 +611,6 @@ footer .container-fluid {
 
   .column-headline a.expanded::after {
     content: "\f077";
-  }
-
-  #article-price nav {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 2% 0 4%;
   }
 }
 
